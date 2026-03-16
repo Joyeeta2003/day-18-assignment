@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 40px;
+  font-size: 20px;
+}
+.navbar .navLeft .logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+}
+.navbar .navCenter .lastChild {
+  font-size: 20px;
+}
+.navbar .navRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 50px;
+}
+.navbar .navRight button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(31, 159, 229);
+}
+
+.about {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 40px;
+}
+.about h2 {
+  width: 45%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.about .aboutRight button {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.about .aboutRight .getBtn {
+  background-color: rgb(31, 159, 229);
+}
+.about .aboutRight .freeBtn {
+  border: 2px solid rgb(31, 159, 229);
+  color: rgb(31, 159, 229);
+}
+
+.firstImg {
+  height: 30%;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}/*# sourceMappingURL=style.css.map */
