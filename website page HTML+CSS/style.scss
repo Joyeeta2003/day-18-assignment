@@ -1,53 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
+    background-color: rgb(224, 223, 223);
 }
-.navbar{
+
+.navbar {
     height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .navLeft{
+    background-color: white;
+    .navLeft {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 15px;
-        padding:0px 40px;
+        padding: 0px 40px;
         font-size: 20px;
-        .logo{
-          height: 30px;
-          width: 30px; 
-          border-radius: 10px; 
+
+        .logo {
+            height: 30px;
+            width: 30px;
+            border-radius: 10px;
         }
     }
-    a{
+
+    a {
         text-decoration: none;
         color: black;
     }
-    .navCenter{
+
+    .navCenter {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;
         font-size: 18px;
-        .lastChild{ 
-            font-size: 20px; 
+
+        .lastChild {
+            font-size: 20px;
         }
     }
 
-    .navRight{
+    .navRight {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
         padding: 0px 50px;
-        button{
+
+        button {
             padding: 10px 20px;
             border-radius: 20px;
             border: none;
@@ -56,37 +66,45 @@ html,body{
         }
     }
 }
-.about{
+
+.about {
     height: 180px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     padding: 20px 40px;
-    h2{
-        width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        width: 35%;
         font-size: 20px;
         font-weight: 600;
     }
-    .aboutRight{
-        button{
+
+    .aboutRight {
+        p{
+            padding-bottom: 20px;
+        }
+        button {
             padding: 10px 20px;
             border-radius: 20px;
         }
-        .getBtn{
-                background-color:  rgb(31, 159, 229);
-            }
-        .freeBtn{
-            border: 2px solid  rgb(31, 159, 229);
-            color:  rgb(31, 159, 229);
+
+        .getBtn {
+            background-color: rgb(31, 159, 229);
+        }
+
+        .freeBtn {
+            border: 2px solid rgb(31, 159, 229);
+            color: rgb(31, 159, 229);
         }
     }
 }
-.firstImg{
+.firstImg {
+    width: 92%;
     height: 30%;
-    width: 90%;
-    object-fit: cover;
-    border-radius: 50px;
-    
+    border-radius: 30px;
+    margin: 0px 40px 0px 40px;
+
 }
