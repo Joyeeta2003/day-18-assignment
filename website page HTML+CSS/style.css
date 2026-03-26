@@ -38,8 +38,8 @@ body {
 }
 .navbar .navCenter {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   font-size: 18px;
 }
@@ -48,8 +48,8 @@ body {
 }
 .navbar .navRight {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 0px 50px;
 }
@@ -61,7 +61,7 @@ body {
   background-color: rgb(31, 159, 229);
 }
 
-.about {
+.aboutFirm {
   height: 180px;
   width: 100%;
   gap: 10px;
@@ -70,22 +70,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.about h2 {
+.aboutFirm h2 {
   width: 35%;
   font-size: 20px;
   font-weight: 600;
 }
-.about .aboutRight p {
+.aboutFirm .aboutRight p {
   padding-bottom: 20px;
 }
-.about .aboutRight button {
+.aboutFirm .aboutRight button {
   padding: 10px 20px;
   border-radius: 20px;
 }
-.about .aboutRight .getBtn {
+.aboutFirm .aboutRight .getBtn {
   background-color: rgb(31, 159, 229);
 }
-.about .aboutRight .freeBtn {
+.aboutFirm .aboutRight .freeBtn {
   border: 2px solid rgb(31, 159, 229);
   color: rgb(31, 159, 229);
 }
@@ -95,4 +95,151 @@ body {
   height: 30%;
   border-radius: 30px;
   margin: 0px 40px 0px 40px;
+}
+
+.ratingBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "box1 box2 box3 box4";
+  gap: 20px;
+  background-color: white;
+}
+.ratingBar .box1 {
+  grid-area: box1;
+  padding: 50px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ratingBar .box2 {
+  grid-area: box2;
+  padding: 50px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ratingBar .box3 {
+  grid-area: box3;
+  padding: 50px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ratingBar .box4 {
+  grid-area: box4;
+  padding: 50px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ratingBar h2 {
+  font-size: 40px;
+  font-weight: 800px;
+}
+.ratingBar p {
+  font-size: 10px;
+}
+
+.aboutUs {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "button img" " h2 img" "p img";
+}
+.aboutUs .aboutBtn {
+  padding: 30px 40px;
+}
+.aboutUs button {
+  grid-area: button;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.aboutUs h2 {
+  grid-area: h2;
+  align-self: self-end;
+  font-size: 30px;
+  font-weight: 700px;
+  padding: 30px 30px 30px 20px;
+}
+.aboutUs p {
+  grid-area: p;
+  padding: 30px;
+}
+.aboutUs .img {
+  grid-area: img;
+  height: 90%;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.expertise {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.expBtn button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 17px;
+}
+
+.exp {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.exp h2 {
+  font-size: 22px;
+  font-weight: 600;
+  width: 900px;
+}
+
+.cards {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.cards .card {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(31, 159, 229);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.cards .card1 .name {
+  font-size: 20px;
+  font-weight: 400;
+}
+.cards .card1 .position {
+  font-weight: 200;
+  padding-bottom: 80px;
+}
+.cards .card1 p {
+  padding-bottom: 80px;
+}
+.cards .card1 .logos {
+  display: flex;
+  gap: 10px;
+}
+.cards .card1 .logos a {
+  border: 2px solid white;
+  padding: px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

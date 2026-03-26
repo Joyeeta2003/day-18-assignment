@@ -11,6 +11,12 @@ body {
     background-color: rgb(224, 223, 223);
 }
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     height: 70px;
     width: 100%;
@@ -18,10 +24,9 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
+
     .navLeft {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 15px;
         padding: 0px 40px;
         font-size: 20px;
@@ -39,9 +44,7 @@ body {
     }
 
     .navCenter {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         gap: 40px;
         font-size: 18px;
 
@@ -51,9 +54,7 @@ body {
     }
 
     .navRight {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         gap: 10px;
         padding: 0px 50px;
 
@@ -67,14 +68,12 @@ body {
     }
 }
 
-.about {
+.aboutFirm {
     height: 180px;
     width: 100%;
     gap: 10px;
     padding: 20px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     h2 {
         width: 35%;
@@ -83,9 +82,10 @@ body {
     }
 
     .aboutRight {
-        p{
+        p {
             padding-bottom: 20px;
         }
+
         button {
             padding: 10px 20px;
             border-radius: 20px;
@@ -101,10 +101,177 @@ body {
         }
     }
 }
+
 .firstImg {
     width: 92%;
     height: 30%;
     border-radius: 30px;
     margin: 0px 40px 0px 40px;
 
+}
+
+.ratingBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box1 box2 box3 box4";
+    gap: 20px;
+    background-color: white;
+
+    .box1 {
+        grid-area: box1;
+        padding: 50px;
+        display: flex;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .box2 {
+        grid-area: box2;
+        padding: 50px;
+        display: flex;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .box3 {
+        grid-area: box3;
+        padding: 50px;
+        display: flex;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .box4 {
+        grid-area: box4;
+        padding: 50px;
+        display: flex;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 800px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+.aboutUs {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "button img"
+        " h2 img"
+        "p img";
+
+    .aboutBtn {
+        padding: 30px 40px;
+    }
+
+    button {
+        grid-area: button;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    h2 {
+        grid-area: h2;
+        align-self: self-end;
+        font-size: 30px;
+        font-weight: 700px;
+        padding: 30px 30px 30px 20px;
+    }
+
+    p {
+        grid-area: p;
+        padding: 30px;
+    }
+
+    .img {
+        grid-area: img;
+        height: 90%;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+}
+
+.expertise {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.expBtn {
+    button {
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 17px;
+    }
+}
+
+.exp {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+        width: 900px;
+    }
+
+}
+
+.cards {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
+    .card {
+        height: 400px;
+        width: 300px;
+        background-color: rgb(31, 159, 229);
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .card1 {
+        .name {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .position {
+            font-weight: 200;
+            padding-bottom: 80px;
+        }
+
+        p {
+            padding-bottom: 80px;
+        }
+
+        .logos {
+            display: flex;
+            gap: 10px;
+
+            a {
+                border: 2px solid white;
+                padding: px;
+                border-radius: 50%;
+
+            }
+        }
+    }
 }
