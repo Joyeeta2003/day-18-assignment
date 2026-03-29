@@ -206,22 +206,43 @@ body {
 }
 
 .cards {
-  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  background-color: white;
 }
 .cards .card {
   height: 400px;
-  width: 300px;
+  width: 265px;
   background-color: rgb(31, 159, 229);
   color: white;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   border-radius: 20px;
+  position: relative;
+}
+.cards .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 20px;
+}
+.cards .card .bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+.cards .card1 {
+  padding: 20px;
 }
 .cards .card1 .name {
   font-size: 20px;
@@ -240,6 +261,115 @@ body {
 }
 .cards .card1 .logos a {
   border: 2px solid white;
-  padding: px;
+  padding: 5px;
   border-radius: 50%;
+}
+
+.milestones {
+  background-color: rgb(224, 223, 223);
+}
+
+.tecnologySolution {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+.tecnologySolution .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.tecnologySolution .left img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.tecnologySolution .right {
+  width: 50%;
+}
+.tecnologySolution .right .timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.tecnologySolution .right .timeline .line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+.tecnologySolution .right .timeline .line .dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+}
+.tecnologySolution .right .timeline .line .dot .item .dot {
+  background: blue;
+}
+
+.year {
+  font-size: 14px;
+  color: gray;
+}
+
+.content {
+  padding: 20px;
+}
+.content h3 {
+  margin: auto;
+}
+.content p {
+  font-size: 14px;
+  color: #666;
+}
+.content a {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+}
+
+.logoi {
+  background-color: bisque;
+  width: 100%;
+  display: grid;
+  grid-template-areas: " h3 star img" "p p img" "h2 h2 img";
+  gap: 10px;
+}
+.logoi .logoipsum {
+  grid-area: h3;
+  padding: 20px;
+  font-size: 20px;
+}
+.logoi .star {
+  grid-area: star;
+  padding: 20px;
+}
+.logoi p {
+  grid-area: p;
+  padding: 20px;
+}
+.logoi h2 {
+  grid-area: h2;
+  padding: 20px;
+}
+.logoi .img {
+  grid-area: img;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 20px;
+}
+.logoi .img img {
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

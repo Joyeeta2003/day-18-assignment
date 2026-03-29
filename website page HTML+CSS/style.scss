@@ -229,25 +229,46 @@ body {
 }
 
 .cards {
-    background-color: antiquewhite;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    background-color: white;
 
     .card {
         height: 400px;
-        width: 300px;
+        width: 265px;
         background-color: rgb(31, 159, 229);
         color: white;
-        padding: 20px;
         display: flex;
         flex-direction: column;
-        border: 2px solid black;
         border-radius: 20px;
+        position: relative;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 20px;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+        }
     }
 
     .card1 {
+        padding: 20px;
+
         .name {
             font-size: 20px;
             font-weight: 400;
@@ -268,10 +289,131 @@ body {
 
             a {
                 border: 2px solid white;
-                padding: px;
+                padding: 5px;
                 border-radius: 50%;
 
             }
+        }
+    }
+}
+
+.milestones {
+    background-color: rgb(224, 223, 223);
+}
+
+.tecnologySolution {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+
+    .left {
+        width: 50%;
+        @include flex-center();
+        padding: 20px;
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            max-height: 350px;
+            border-radius: 15px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+
+            .line {
+                position: absolute;
+                left: 10px;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: #ccc;
+
+                .dot {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 15px;
+                    height: 15px;
+                    background: #ccc;
+                    border-radius: 50%;
+
+                    .item {
+                        .dot {
+                            background: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.year {
+    font-size: 14px;
+    color: gray;
+}
+
+.content {
+    padding: 20px;
+
+    h3 {
+        margin: auto;
+    }
+
+    p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+        font-size: 14px;
+    }
+}
+
+.logoi {
+    background-color: bisque;
+    width: 100%;
+    display: grid;
+    grid-template-areas: " h3 star img"
+                          "p p img"
+                          "h2 h2 img";
+    gap: 10px;
+
+    .logoipsum{
+        grid-area: h3;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .star {
+        grid-area: star;
+         padding: 20px;
+    }
+
+    p {
+        grid-area: p;
+     padding: 20px;
+    }
+    h2{
+        grid-area: h2;
+         padding: 20px;
+    }
+    .img{
+        grid-area: img;
+        object-fit: cover;
+        padding: 20px;
+        img{
+            border-radius: 20px;
         }
     }
 }
