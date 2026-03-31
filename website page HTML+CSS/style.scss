@@ -381,15 +381,15 @@ body {
 }
 
 .logoi {
-    background-color: bisque;
+    background-color: white;
     width: 100%;
     display: grid;
     grid-template-areas: " h3 star img"
-                          "p p img"
-                          "h2 h2 img";
+        "p p img"
+        "h2 h2 img";
     gap: 10px;
 
-    .logoipsum{
+    .logoipsum {
         grid-area: h3;
         padding: 20px;
         font-size: 20px;
@@ -397,23 +397,162 @@ body {
 
     .star {
         grid-area: star;
-         padding: 20px;
+        padding: 20px;
     }
 
     p {
         grid-area: p;
-     padding: 20px;
+        padding: 20px;
     }
-    h2{
+
+    h2 {
         grid-area: h2;
-         padding: 20px;
+        padding: 20px;
     }
-    .img{
+
+    .img {
         grid-area: img;
         object-fit: cover;
         padding: 20px;
-        img{
+
+        img {
             border-radius: 20px;
         }
+    }
+}
+
+.connect {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: space-between;
+
+    .connectDetails {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        width: 50%;
+        height: 400px;
+        gap: 10px;
+        justify-content: space-between;
+
+        .top {
+            button {
+                padding: 10px 20px;
+                border: 1px solid black;
+                border-radius: 20px;
+                width: fit-content;
+            }
+
+            h1 {
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+
+        .bottom {
+            p {
+                font-size: 10px;
+                color: #666;
+                padding: 5px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            .logo {
+                i {
+                    border: 1px solid black;
+                    padding: 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+
+    .connectLocation {
+        overflow: hidden;
+        height: 400px;
+
+        img {
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
+
+.mainfooter {
+    background-color: #313131;
+        color: white;
+        padding: 35px;
+        margin: 10px 10px 0px 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    .footer {
+        display: flex;
+        gap: 20px;
+        align-items: space-between;
+        justify-content: space-between;
+
+        .footerLeft {
+            .top {
+                display: flex;
+                gap: 12px;
+                font-size: 20px;
+                padding-bottom: 30px;
+
+                .logo {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 10px;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .input {
+                    display: flex;
+                    gap: 10px;
+
+                    input {
+                        background-color: #666;
+                        border-radius: 20px;
+                        padding: 3px 15px;
+                    }
+
+                    button {
+                        padding: 5px 20px;
+                        background-color: rgb(11, 134, 200);
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+
+        .footerMid1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .last {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+         .logo {
+                i {
+                    border: 1px solid rgb(245, 240, 240);
+                    padding: 5px;
+                    border-radius: 50%;
+                }
+            }
     }
 }

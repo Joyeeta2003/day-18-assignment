@@ -341,7 +341,7 @@ body {
 }
 
 .logoi {
-  background-color: bisque;
+  background-color: white;
   width: 100%;
   display: grid;
   grid-template-areas: " h3 star img" "p p img" "h2 h2 img";
@@ -372,4 +372,115 @@ body {
 }
 .logoi .img img {
   border-radius: 20px;
+}
+
+.connect {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: space-between;
+}
+.connect .connectDetails {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  height: 400px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.connect .connectDetails .top button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.connect .connectDetails .top h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.connect .connectDetails .bottom p {
+  font-size: 10px;
+  color: #666;
+  padding: 5px;
+}
+.connect .connectDetails .bottom h3 {
+  font-size: 15px;
+}
+.connect .connectDetails .bottom .logo i {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+}
+.connect .connectLocation {
+  overflow: hidden;
+  height: 400px;
+}
+.connect .connectLocation img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.mainfooter {
+  background-color: #313131;
+  color: white;
+  padding: 35px;
+  margin: 10px 10px 0px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mainfooter .footer {
+  display: flex;
+  gap: 20px;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.mainfooter .footer .footerLeft .top {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.mainfooter .footer .footerLeft .top .logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+.mainfooter .footer .footerLeft .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mainfooter .footer .footerLeft .bottom .input {
+  display: flex;
+  gap: 10px;
+}
+.mainfooter .footer .footerLeft .bottom .input input {
+  background-color: #666;
+  border-radius: 20px;
+  padding: 3px 15px;
+}
+.mainfooter .footer .footerLeft .bottom .input button {
+  padding: 5px 20px;
+  background-color: rgb(11, 134, 200);
+  border-radius: 20px;
+}
+.mainfooter .footer .footerMid1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mainfooter .last {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.mainfooter .last .logo i {
+  border: 1px solid rgb(245, 240, 240);
+  padding: 5px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
