@@ -379,7 +379,6 @@ body {
   padding: 20px;
   justify-content: center;
   align-items: space-between;
-  background-color: white;
 }
 .connect .connectDetails {
   display: flex;
